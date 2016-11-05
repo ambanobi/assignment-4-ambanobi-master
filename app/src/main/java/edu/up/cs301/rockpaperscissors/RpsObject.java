@@ -64,6 +64,7 @@ public abstract class RpsObject {
             yVelocity = 3f; //if the reaches 1 due to downwards gravity, turn the object around
         }
         if(yCoord > 1260){
+            yVelocity = -yVelocity;
             yCoord = 1200-size; //makes sure object does not go off the bottom of the screen due to gravity
         }
         if(yVelocity > 0) {

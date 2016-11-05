@@ -30,7 +30,7 @@ public class PaperObject extends RpsObject {
     //draws image representing paper on canvas--a white square
     public void draw(Canvas canvas){
 
-        if(this.destroyed == true){
+        if(this.destroyed){
             return; //does not draw object if it has been destroyed
         }
         int color = Color.rgb(255, 255, 255);
