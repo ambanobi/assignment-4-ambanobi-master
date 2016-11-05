@@ -1,0 +1,34 @@
+Document all outside help in this file.
+
+Problem: How to get the x,y position of a touch event
+Date: 11/1/16
+Source: Stack Overflow: How to get the Touch position in android? @http://stackoverflow.com/questions/3476779/how-to-get-the-touch-position-in-android
+Solution: simply using event.getX() nad event.getY() returns the x and y coordinates respectively.
+
+Problem: I couldn't figure out why my objects were going backwards in the y direction
+Date: 10/30/16
+Source: Stack Overflow: How do android screen coordinates work? @http://stackoverflow.com/questions/11483345/how-do-android-screen-coordinates-work
+Solution: The y coordinate increases as you go down instead of up as I though was the case
+
+Problem: How to get the add Button to add objects to my array of rpsObjects
+Date: 11/4/16
+Source: Nicole Kister
+Solution: You can create an addObject method and than call it on the RpsAnimator "animator" declared in the RpsActivity class
+
+Problem: How to implement the finger gravity
+Date: 11/4/16
+Source: Nicole Kister
+Solution: We worked together to figure out ways to properly do the math to calculate a force dependent on
+the distance between the object and the touch location and then add that force to the velocity.
+
+Problem: How to process an event where you hold down your finger instead of just the initial touch
+Date: 11/4/16
+Source: Stack Overflow: How to get a continuous Touch Event? @http://stackoverflow.com/questions/2539524/how-to-get-a-continuous-touch-event
+Solution: You can use the MotionEvent.ACTION_MOVE instead of MotionEvent.ACTION_DOWN to repeatedly update the location
+of your touch
+
+Problem: How to check if two objects overlap
+Date: 10/20/16
+Source: Dr. Vegdhal's code in the DooDadDemo project
+Solution: Check if the square sum of the radii of both objects is less than the square of the distance
+between the objects. If so, they have overlapped.
